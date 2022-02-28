@@ -1,5 +1,6 @@
 // Components
 import HeaderCompnent from './Components/Header/HeaderComponent';
+import Navigation from './Components/Navigation/Navigation';
 
 // CSS
 import './App.css';
@@ -15,6 +16,9 @@ function App() {
 			<header>
 				<HeaderCompnent />
 			</header>
+			<nav>
+				<Navigation />
+			</nav>
 			<div className='body-container'>
 				<h1 className='headings'>Body Heading Goes Here!</h1>
 				<p >Body Contents Go Here!</p>
