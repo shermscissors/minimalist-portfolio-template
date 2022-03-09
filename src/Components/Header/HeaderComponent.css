@@ -1,6 +1,6 @@
 header {
 	/* Background : Centered with room for items in the center */
-	background-image: url(/public/assets/clouds.jpg);
+	background-image: url(/public/assets/DSCF0095.jpg);
 	background-color: black;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -8,11 +8,10 @@ header {
 	background-attachment: fixed;
 	grid-row: 1 / span 1;
 	width: 100%;
-	padding: 25% 0;
+	height: 50%;
+	padding: 20% 0;
 	align-items: center;
 	justify-items: center;
-	animation-name: color-in;
-	animation-duration: 2500ms;
 }
 
 /* Class Specific CSS */
@@ -22,12 +21,13 @@ header {
 
 #masthead-h1 {
 	display: flex;
-	font-size: 300%;
-	color: rgb(255, 208, 208);
-	margin: 2% 0;
+	color: rgb(58, 58, 58);
 	text-transform: lowercase;
+	font-size: 300%;
 	align-items: center;
 	justify-items: center;
+	margin: 2% 0;
+	animation: fade-in 3000ms ease-in-out alternate;
 }
 
 #masthead-button {
@@ -35,16 +35,8 @@ header {
 	display: block;
 	justify-self: center;
 	align-self: center;
+	animation: fade-in 3000ms ease-in-out infinite alternate;
+
 }
 
 /* Animations */
-
-@keyframes color-in {
-	0% {
-		filter: blur(2px) grayscale(1);
-	}
-	100% {
-		filter: blur(0) grayscale(0);
-
-	}
-}
