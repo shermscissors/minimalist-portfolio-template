@@ -1,6 +1,6 @@
 header {
 	/* Background : Centered with room for items in the center */
-	background-image: url(/public/assets/clouds.jpg);
+	background-image: url(/public/assets/DSCF0095.jpg);
 	background-color: black;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -8,20 +8,27 @@ header {
 	background-attachment: fixed;
 	grid-row: 1 / span 1;
 	width: 100%;
-	padding: 25% 0;
+	height: 50%;
+	padding: 20% 0;
 	align-items: center;
 	justify-items: center;
-	animation-name: color-in;
-	animation-duration: 2500ms;
+	animation: image-in 45000ms infinite alternate;
 }
 
+/* Class Specific CSS */
+
+
+/* ID Specific CSS */
+
 #masthead-h1 {
-	font-size: 300%;
-	color: rgb(255, 208, 208);
-	margin: 1% 0;
 	display: flex;
+	color: rgb(46, 46, 46);
+	text-transform: lowercase;
+	font-size: 300%;
 	align-items: center;
 	justify-items: center;
+	margin: 2% 0;
+	animation: fade-in 3000ms ease-in-out alternate;
 }
 
 #masthead-button {
@@ -29,14 +36,24 @@ header {
 	display: block;
 	justify-self: center;
 	align-self: center;
+	animation: fade-in 3000ms ease-in-out infinite alternate;
 }
 
-@keyframes color-in {
+#button-text:hover {
+	color: rgb(248, 130, 130);
+}
+
+/* Animations */
+
+@keyframes image-in {
 	0% {
-		filter: blur(2px) grayscale(1);
+		background-image: url('/public/assets/DSCF0095.jpg');
+	}
+	50% {
+		background-image: url('/public/assets/456373006516-R1-035-16.jpg');
 	}
 	100% {
-		filter: blur(0) grayscale(0);
-
+		background-image: url('/public/assets/clouds.jpg');
 	}
+	
 }
