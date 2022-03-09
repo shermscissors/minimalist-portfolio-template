@@ -10,15 +10,6 @@ html {
 	height: 90%;
 }
 
-nav {
-	display: flex;
-	background-color: rgb(255, 170, 170);
-	color: rgb(75, 74, 74);
-	grid-row: 2;
-	padding: 1% 0;
-	width: 100%;
-}
-
 footer {
 	background-color: rgb(231, 231, 231);
 	grid-row: 4;
@@ -44,6 +35,14 @@ h1 {
 	color: rgb(75, 75, 75);
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 30px;
+	margin: 2% 0;
+	padding: 0;
+	display: flex;
+	align-self: center;
+	justify-items: center;
+}
+
+h2 {
 	margin: 2% 0;
 	padding: 0;
 	display: flex;
@@ -80,6 +79,24 @@ button:hover {
 	transition: 1s;
 }
 
+a {
+	color: white;
+	transition: color 500ms ease-in-out;
+
+}
+
+a:hover {
+	color: rgb(138, 111, 111);
+	
+}
+
+li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	text-transform:uppercase;
+    padding: 0 10px;
+}
+
 /* Class Specific CSS */
 
 /* Main App.js CSS : Just defines the grid of the website */
@@ -97,16 +114,13 @@ button:hover {
 	padding: 2% 0;
 }
 
+
 .body-container {
 	background-color: rgb(248, 248, 248);
-	grid-row: 3;
 	/* Make it take the entire width of the page */
 	width: 100%;
-	/* Dividing line between body containers and nav bar */
-	border-top: 2px solid black;
+	
 }
-
-/* Standard stlying for main h1s */
 
 /* CSS for Grids */
 .grid-template {

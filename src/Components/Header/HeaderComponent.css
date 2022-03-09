@@ -15,11 +15,17 @@ header {
 	animation-duration: 2500ms;
 }
 
+/* Class Specific CSS */
+
+
+/* ID Specific CSS */
+
 #masthead-h1 {
+	display: flex;
 	font-size: 300%;
 	color: rgb(255, 208, 208);
-	margin: 1% 0;
-	display: flex;
+	margin: 2% 0;
+	text-transform: lowercase;
 	align-items: center;
 	justify-items: center;
 }
@@ -30,6 +36,8 @@ header {
 	justify-self: center;
 	align-self: center;
 }
+
+/* Animations */
 
 @keyframes color-in {
 	0% {

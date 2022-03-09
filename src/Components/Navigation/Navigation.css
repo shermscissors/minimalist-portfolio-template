@@ -1,0 +1,24 @@
+/* Main Components */
+
+nav {
+	display: flex;
+	background-color: rgb(255, 134, 134);
+	color: rgb(75, 74, 74);
+	grid-row: 2;
+	padding: 1% 0;
+	width: 100%;
+	/* Dividing line between body containers and nav bar */
+	border-bottom: 2px solid black;
+}
+
+/* Class Specific CSS */
+
+.navigation-list {
+    display: flex;
+    flex: content;
+    flex-flow: row;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-self: center;
+    list-style: none;
+}

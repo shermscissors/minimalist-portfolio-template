@@ -1,4 +1,7 @@
+// CSS
 import './HeaderComponent.css';
+
+// External Stuff
 import React from 'react';
 
 function HeaderCompnent(props) {
