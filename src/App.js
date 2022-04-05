@@ -14,8 +14,20 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
 	// Console Stuff
 	setTimeout(() => {
-		console.log('Loading...');
-	}, 5000);
+		console.log('Created and maintained by David Gales');
+	}, 2000);
+
+	setTimeout(() => {
+		console.log(
+			'For more information, visit https://github.com/shermscissors/'
+		);
+	}, 5500);
+	
+		setTimeout(() => {
+			console.log(
+				'And feel free to donate him a coffee for all his hard work :D'
+			);
+		}, 6500);
 
 	return (
 		<div className='App'>
@@ -23,13 +35,13 @@ function App() {
 				<HeaderCompnent />
 			</header>
 			<nav>
-				<Navigation/>
+				<Navigation />
 			</nav>
-				<Routes>
-					<Route index path='/' element={<Home/>} />
-					<Route path='/about' element={<About />} />
-					<Route path='/blog' element= {<Blog />} />
-				</Routes>
+			<Routes>
+				<Route index path='/' element={<Home />} />
+				<Route path='/about' element={<About />} />
+				<Route path='/blog' element={<Blog />} />
+			</Routes>
 			<footer>
 				<h1 className='headings' id='footer-heading'>
 					Footer Heading Goes Here!
