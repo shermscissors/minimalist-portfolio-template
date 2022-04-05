@@ -11,14 +11,13 @@ function HeaderCompnent(props) {
 				Minimalist Portfolio Template
 			</h1>
 
-			<button id='masthead-button'>
-				<a id='button-text'
-					href='https://en.wikipedia.org/wiki/Mellon_Collie_and_the_Infinite_Sadness'
-					target={'_blank'}
-					rel='noreferrer'>
-					Take Me Somewhere Better
-				</a>
-			</button>
+			<a
+				id='button-text'
+				href='https://en.wikipedia.org/wiki/Mellon_Collie_and_the_Infinite_Sadness'
+				target={'_blank'}
+				rel='noreferrer'>
+				<button id='masthead-button'>Take Me Somewhere Better</button>
+			</a>
 		</div>
 	);
 }

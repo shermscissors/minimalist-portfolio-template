@@ -9,7 +9,7 @@ nav {
 	justify-content: center;
 	align-content: center;
 	/* Dividing line between body containers and nav bar */
-	border-bottom: 3px solid black;
+	border-bottom: 3px solid rgb(34, 34, 34);
 }
 
 /* Class Specific CSS */

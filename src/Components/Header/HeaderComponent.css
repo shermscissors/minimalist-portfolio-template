@@ -8,7 +8,7 @@ header {
 	background-attachment: fixed;
 	grid-row: 1 / span 1;
 	width: 100%;
-	height: 50%;
+	height: 40vh;
 	padding: 20% 0;
 	align-items: center;
 	justify-items: center;
@@ -17,17 +17,24 @@ header {
 
 /* Class Specific CSS */
 
+.masthead {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-self: center;
+	align-self: center;
+}
 
 /* ID Specific CSS */
 
 #masthead-h1 {
-	display: flex;
+	display: inline;
 	color: rgb(46, 46, 46);
 	text-transform: lowercase;
-	font-size: 300%;
-	align-items: center;
-	justify-items: center;
-	margin: 2% 0;
+	font-size: 250%;
+	align-self: center;
+	justify-self: center;
+	margin: 2% 5%;
 	animation: fade-in 3000ms ease-in-out alternate;
 }
 
@@ -39,8 +46,19 @@ header {
 	animation: fade-in 3000ms ease-in-out infinite alternate;
 }
 
-#button-text:hover {
+#masthead-button:hover {
 	color: rgb(248, 130, 130);
+}
+
+/* Mobile Styling */
+
+@media (max-width: 550px) {
+	header {
+		height: 25vh;
+	}
+	#masthead-h1 {
+		font-size: 150%;
+	}
 }
 
 /* Animations */
@@ -55,5 +73,4 @@ header {
 	100% {
 		background-image: url('/public/assets/clouds.jpg');
 	}
-	
 }
