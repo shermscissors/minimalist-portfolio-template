@@ -1,8 +1,8 @@
 # Minimalist Portfolio Template
 ## A template for a simple, multipage minimalist portfolio style website. 
 
-![Desktop Screenshot](public\assets\screenshot1.png)
-![Desktop Details](public\assets\screenshot2.png)
+![Desktop Screenshot](./public/assets/screenshot1.png)
+![Desktop Details](./public/assets/screenshot2.png)
 
 Welcome to the minimalist portfolio template: an easy start to your next website.
 
